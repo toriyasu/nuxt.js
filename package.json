@@ -54,7 +54,6 @@
     "clean": "rimraf dist",
     "coverage": "codecov",
     "lint": "eslint --ext .js,.mjs,.vue bin lib test examples",
-    "postinstall": "opencollective postinstall || exit 0",
     "prebuild": "yarn clean",
     "security": "nsp check || true",
     "test": "yarn test:fixtures && yarn test:unit",
@@ -164,10 +163,5 @@
     "rollup-plugin-commonjs": "^9.1.0",
     "rollup-plugin-json": "^2.3.0",
     "rollup-plugin-node-resolve": "^3.3.0"
-  },
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/nuxtjs",
-    "logo": "https://opencollective.com/nuxtjs/logo.txt?reverse=true&variant=variant2"
   }
 }
